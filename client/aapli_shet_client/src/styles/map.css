@@ -1,0 +1,137 @@
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-template-rows: repeat(2, 0fr);
+    grid-gap: 0;
+    margin-right: 80px;
+    /* background: url("../assets/make-it-left-aligned--reduce-space.svg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.searchbar input {
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.map_map {}
+
+.map {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Map__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color2);
+    width: 100%;
+    padding: 0;
+}
+
+.forecast {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+    color: black;
+    background-color: var(--color3);
+    color: var(--color2);
+    text-shadow: -1px 1px 0 #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+}
+
+.forecast:hover {
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+}
+
+#forecast_1 {
+    height: 250px;
+    width: 150px;
+    margin-top: 30px;
+}
+
+#forecast_2 {
+    height: 150px;
+    width: 250px;
+    margin: 130px -100px 0 -80px;
+}
+
+#forecast_3 {
+    height: 170px;
+    width: 250px;
+}
+
+#forecast_4 {
+    height: 250px;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.weatherIcon {
+    width: 50px;
+    height: 50px;
+    margin-top: -160px;
+    margin-bottom: 110px;
+    margin-right: -120px;
+    margin-left: 120px;
+}
+
+.weatherIcon img {
+    width: 200px;
+    height: 200px;
+}
+
+.map_container {
+    height: 86.7vh;
+    width: 35vw;
+    margin: 0;
+    border-radius: 15px;
+}
+
+@media  (max-width: 768px) {
+    .map {
+        width: 100vw;
+        flex-direction: column-reverse;
+    }
+
+    .Map__main {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .map_container {
+        height: 35vh;
+        width: 100vw;
+        margin: 0;
+        border-radius: 15px;
+    }
+
+    .forecast {
+        scale: 0.5;
+        height: auto;
+        margin: 10px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+}

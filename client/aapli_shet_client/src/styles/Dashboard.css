@@ -1,0 +1,39 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.render__active__container{
+  overflow: hidden;
+  width: 100%;
+}
+.dashboard__bottom{
+  display: flex;
+}
+
+/* make this mobile responsive */
+
+/* dashboard == dashboard */
+/* dashboard__bottom == dashboard__bottom */
+/*  dashboard_bottom_left == sidebar */
+/*  dashboard_bottom_right == render__active__container */
+
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .dashboard__bottom__left {
+    display: none;
+  }
+
+  .dashboard__bottom {
+    flex-direction: column;
+  }
+
+  .render__active__container {
+  }
+}
+
